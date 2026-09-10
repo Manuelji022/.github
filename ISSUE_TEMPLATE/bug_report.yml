@@ -1,0 +1,80 @@
+name: Bug report
+description: Report a reproducible problem
+title: "[Bug]: "
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug description
+      description: Describe the problem clearly, including what is failing and its impact.
+      placeholder: What went wrong?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What should have happened instead?
+      placeholder: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual behavior
+      description: What happened? Include exact error messages when available.
+      placeholder: What happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest reliable sequence of steps, inputs, and configuration that reproduces the problem.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include only details relevant to reproducing the problem.
+      value: |
+        - OS:
+        - Browser/runtime:
+        - Application/version/commit:
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs-or-screenshots
+    attributes:
+      label: Relevant logs or screenshots
+      description: Add sanitized logs, stack traces, screenshots, or recordings. Do not include secrets.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add related links, workarounds, recent changes, or any other useful context.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I searched existing issues and did not find a matching report.
+          required: true
+        - label: I confirm that this report contains no sensitive information, credentials, tokens, or secrets.
+          required: true

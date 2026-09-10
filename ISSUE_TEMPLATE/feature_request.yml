@@ -1,0 +1,72 @@
+name: Feature request
+description: Describe a problem and the outcome a new capability should enable
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem or limitation are you experiencing? Describe the users and use cases affected.
+      placeholder: What is difficult, unavailable, or not working well today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: desired-outcome
+    attributes:
+      label: Desired outcome
+      description: What should users be able to accomplish when this problem is solved? Describe observable behavior or acceptance criteria.
+      placeholder: Users should be able to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed solution
+      description: Optional implementation suggestion. The implementation is not part of the requirement and may be changed during planning.
+      placeholder: One possible approach is...
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives-considered
+    attributes:
+      label: Alternatives considered
+      description: What workarounds, existing capabilities, or other approaches have you considered?
+    validations:
+      required: false
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What should be included for this request to be complete? List boundaries or acceptance criteria where useful.
+      placeholder: Include...
+    validations:
+      required: true
+
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope
+      description: What related work should explicitly not be included in this request?
+      placeholder: Do not include...
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add optional screenshots, examples, references, links, or other context.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I searched existing issues and did not find a matching request.
+          required: true
